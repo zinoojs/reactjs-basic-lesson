@@ -10,12 +10,20 @@ import ParentComponents from "./components/ParentComponents";
 import UserLogin from "./components/UserLogin";
 import NameList from "./components/NameList";
 import WebList from "./components/WebList";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import ParentComponent from "./components/ParentComponent";
+import RefComp from "./components/RefComp";
 
 function App() {
 	const [data, setData] = useState({ name: "bobo", age: 20 });
 
 	return (
 		<div className='App'>
+			<RefComp />
+			{/* <ParentComponent /> */}
+			{/* <Table /> */}
+			{/* <FragmentDemo /> */}
 			{/* conditional rendering */}
 			{/* <WebList />
 			<UserLogin />
