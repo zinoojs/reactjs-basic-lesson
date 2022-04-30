@@ -10,12 +10,19 @@ import ParentComponents from "./components/ParentComponents";
 import UserLogin from "./components/UserLogin";
 import NameList from "./components/NameList";
 import WebList from "./components/WebList";
-
+import Stylesheet from "./components/Stylesheet";
+import Inlinecss from "./components/Inlinecss";
+import style from "./style.module.css";
+import Form from "./components/Form";
 function App() {
 	const [data, setData] = useState({ name: "bobo", age: 20 });
 
 	return (
 		<div className='App'>
+			<h1 className={style.center}> This is Home</h1>
+			<Form />
+			{/* <Stylesheet primary={true} />
+			<Inlinecss /> */}
 			{/* conditional rendering */}
 			{/* <WebList />
 			<UserLogin />

@@ -1,0 +1,14 @@
+.primary{
+    color: tomato;
+}
+.secondary{
+    color: grey;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgColor{
+    background: radial-gradient(circle,rgba(255, 0, 0, 0.253),rgba(44, 180, 44, 0.315));
+}
