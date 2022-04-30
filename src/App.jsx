@@ -14,13 +14,23 @@ import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
 import ParentComponent from "./components/ParentComponent";
 import RefComp from "./components/RefComp";
+import FwInput from "./components/FwInput";
+import PortalDemo from "./components2/PortalDemo";
+import HeroName from "./components2/HeroName";
+import ClickCount from "./components2/ClickCount";
 
 function App() {
 	const [data, setData] = useState({ name: "bobo", age: 20 });
 
 	return (
 		<div className='App'>
-			<RefComp />
+			<ClickCount />
+			{/* <HeroName hero='batman' />
+			<HeroName hero='superman' />
+			<HeroName hero='joker' /> */}
+			{/* <PortalDemo /> */}
+			{/* <FwInput /> */}
+			{/* <RefComp /> */}
 			{/* <ParentComponent /> */}
 			{/* <Table /> */}
 			{/* <FragmentDemo /> */}
