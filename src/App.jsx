@@ -31,12 +31,10 @@ function App() {
 
 	return (
 		<div className='App'>
-<<<<<<< HEAD
 			<h1 className={style.center}> This is Home</h1>
 			<Form />
 			{/* <Stylesheet primary={true} />
 			<Inlinecss /> */}
-=======
 			<ClickCount />
 			{/* <HeroName hero='batman' />
 			<HeroName hero='superman' />
@@ -47,7 +45,6 @@ function App() {
 			{/* <ParentComponent /> */}
 			{/* <Table /> */}
 			{/* <FragmentDemo /> */}
->>>>>>> 1b53009f17d9b01db6372bb71b35067bc512b424
 			{/* conditional rendering */}
 			{/* <WebList />
 			<UserLogin />
