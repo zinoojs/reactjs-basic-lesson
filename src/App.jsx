@@ -10,12 +10,10 @@ import ParentComponents from "./components/ParentComponents";
 import UserLogin from "./components/UserLogin";
 import NameList from "./components/NameList";
 import WebList from "./components/WebList";
-<<<<<<< HEAD
 import Stylesheet from "./components/Stylesheet";
 import Inlinecss from "./components/Inlinecss";
 import style from "./style.module.css";
 import Form from "./components/Form";
-=======
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
 import ParentComponent from "./components/ParentComponent";
@@ -24,18 +22,25 @@ import FwInput from "./components/FwInput";
 import PortalDemo from "./components2/PortalDemo";
 import HeroName from "./components2/HeroName";
 import ClickCount from "./components2/ClickCount";
+import Hoc from "./components2/Hoc";
+import ChindOne from "./components2/ChindOne";
+import PropsLesson from "./components2/PropsLesson";
 
->>>>>>> 1b53009f17d9b01db6372bb71b35067bc512b424
 function App() {
-	const [data, setData] = useState({ name: "bobo", age: 20 });
+	// const [data, setData] = useState({ name: "bobo", age: 20 });
 
 	return (
 		<div className='App'>
-			<h1 className={style.center}> This is Home</h1>
-			<Form />
+			<PropsLesson
+				name={(isLogin) => (isLogin ? "kyawzinoo" : "Guest")}
+			/>
+			{/* <ChindOne hero='superman' /> */}
+			{/* <Hoc /> */}
+			{/* <h1 className={style.center}> This is Home</h1>
+			<Form /> */}
 			{/* <Stylesheet primary={true} />
 			<Inlinecss /> */}
-			<ClickCount />
+			{/* <ClickCount /> */}
 			{/* <HeroName hero='batman' />
 			<HeroName hero='superman' />
 			<HeroName hero='joker' /> */}
