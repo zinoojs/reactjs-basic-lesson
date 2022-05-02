@@ -25,15 +25,32 @@ import ClickCount from "./components2/ClickCount";
 import Hoc from "./components2/Hoc";
 import ChindOne from "./components2/ChindOne";
 import PropsLesson from "./components2/PropsLesson";
+import Counter from "./components2/Counter";
+import HoverConter from "./components2/HoverConter";
+import CompoA from "./components3/CompoA";
+import { UserProvider } from "./components3/userContext";
 
 function App() {
 	// const [data, setData] = useState({ name: "bobo", age: 20 });
 
 	return (
 		<div className='App'>
-			<PropsLesson
+			<UserProvider value='zinoo'>
+				<CompoA />
+			</UserProvider>
+			{/* <Counter>
+				{(count, increseCount) => (
+					<ClickCount count={count} increseCount={increseCount} />
+				)}
+			</Counter>
+			<Counter>
+				{(count, increseCount) => (
+					<HoverConter count={count} increseCount={increseCount} />
+				)}
+			</Counter> */}
+			{/* <PropsLesson
 				name={(isLogin) => (isLogin ? "kyawzinoo" : "Guest")}
-			/>
+			/> */}
 			{/* <ChindOne hero='superman' /> */}
 			{/* <Hoc /> */}
 			{/* <h1 className={style.center}> This is Home</h1>
